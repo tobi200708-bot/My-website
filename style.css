@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: #070b14;
+  color: #f9fafb;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 45px 40px;
+  background: #111827;
+  border: 1px solid #293449;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 20px 50px #0005;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: #ff3347;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 12px 0;
+  color: #ff3347;
+  font-size: clamp(30px, 6vw, 44px);
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.subtitle {
+  margin: 18px 0 32px;
+  font-size: 18px;
+  color: #d1d5db;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  padding: 17px;
+  background: #070b14;
+  color: white;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #ff3347;
+  outline-offset: 1px;
+}
+
+button {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 20px;
+  padding: 14px;
+  background: #ff3347;
+  color: white;
+  border: 0;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.secondary {
+  background: #263449;
+}
+
+.switch-text {
+  margin: 28px 0 0;
+  font-size: 16px;
+}
+
+#message {
+  min-height: 22px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.success-icon {
+  width: 58px;
+  height: 58px;
+  margin: 20px auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #166534;
+  font-size: 30px;
+}
+
+.user-email {
+  overflow-wrap: anywhere;
+  color: #93c5fd;
+}
+
+.footer {
+  margin-top: 28px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 32px 22px;
+    border-radius: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
